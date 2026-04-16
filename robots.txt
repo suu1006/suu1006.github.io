@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# Naver 검색로봇
+User-agent: Yeti
+Allow: /
+
+# Google 검색로봇
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://suu1006.github.io/sitemap.xml
