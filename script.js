@@ -52,27 +52,48 @@ const navWrap = document.getElementById('navWrap');
 const hamburger = document.getElementById('hamburger');
 const navList = document.getElementById('navList');
 
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 30) {
-    navWrap.classList.add('scrolled');
-  } else {
-    navWrap.classList.remove('scrolled');
-  }
-}, { passive: true });
+if (navWrap) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 30) {
+      navWrap.classList.add('scrolled');
+    } else {
+      navWrap.classList.remove('scrolled');
+    }
+  }, { passive: true });
+}
 
-hamburger.addEventListener('click', () => {
-  const isOpen = navList.classList.toggle('open');
-  hamburger.setAttribute('aria-expanded', String(isOpen));
-  hamburger.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
-});
+function setMobileNavOpen(open) {
+  if (!navList || !hamburger) return;
+  navList.classList.toggle('open', open);
+  document.body.classList.toggle('nav-menu-open', open);
+  hamburger.setAttribute('aria-expanded', String(open));
+  hamburger.setAttribute('aria-label', open ? '\uBA54\uB274 \uB2EB\uAE30' : '\uBA54\uB274 \uC5F4\uAE30');
+}
 
-navList.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navList.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.setAttribute('aria-label', '메뉴 열기');
+if (hamburger && navList) {
+  hamburger.addEventListener('click', () => {
+    setMobileNavOpen(!navList.classList.contains('open'));
   });
-});
+
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      setMobileNavOpen(false);
+    });
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navList.classList.contains('open')) {
+      setMobileNavOpen(false);
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1024 && navList.classList.contains('open')) {
+      setMobileNavOpen(false);
+    }
+  });
+}
+
 
 /* ============================================================
    REVEAL ON SCROLL (IntersectionObserver)
