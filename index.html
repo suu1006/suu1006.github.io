@@ -125,9 +125,8 @@
       </button>
       <ul class="nav-list" id="navList" role="list">
         <li><a href="#about" class="nav-link"><span class="nav-num" aria-hidden="true">01.</span> About</a></li>
-        <li><a href="#projects" class="nav-link"><span class="nav-num" aria-hidden="true">02.</span> Projects</a></li>
-        <li><a href="#career" class="nav-link"><span class="nav-num" aria-hidden="true">03.</span> Career</a></li>
-        <li><a href="#skills" class="nav-link"><span class="nav-num" aria-hidden="true">04.</span> Skills</a></li>
+        <li><a href="#career-projects" class="nav-link"><span class="nav-num" aria-hidden="true">02.</span> Career &amp; Projects</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-num" aria-hidden="true">03.</span> Skills</a></li>
         <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
       </ul>
     </nav>
@@ -154,11 +153,8 @@
             <br />사용자 경험을 끊임없이 다듬어온 4년 차 프론트엔드 개발자입니다.
           </p>
           <div class="hero-cta-row">
-            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--primary" href="#career-projects">View Projects</a>
             <a class="btn btn--outline" href="mailto:jeongsuu1006@gmail.com">Send Email</a>
-          </div>
-          <div class="hero-meta">
-            <span>📍 서울 강남구 역삼동</span>
           </div>
         </div>
         <div class="hero-code-card" aria-hidden="true">
@@ -208,15 +204,23 @@
             </p>
             <p>
               기존 11명이었던 회사에서 2명으로 인원수가 감소하는 상황에서도
-              <strong>기획·디자인·운영 등 타 부서와 소통</strong>하며 요구사항을
-              명확히 정리하고 합의를 이끌어 프로젝트를 완수한 경험이 있습니다.
+              <strong>기획·디자인·운영 등 타 부서와 소통</strong>하며 요구사항을 명확히 정리하고
+              합의를 이끌어 프로젝트를 완수한 경험이 있으며, UX 개선이 필요한 지점을 발견하면
+              관련 부서와 직접 논의해 반영해 왔습니다.
             </p>
             <p>
-              개인 학습으로 Next.js 16 + React 19 기반의 <strong>AI 챗봇 프로젝트</strong>를
-              진행했습니다. Ollama 기반 로컬 LLM을 연동해 실시간 스트리밍 응답(ReadableStream)을
-              구현하고, Zustand persist와 Markdown 렌더링을 적용했습니다.
-              현재는 React Native와 Next.js 기반 육아 AI 커뮤니티 앱 <strong>'베비맘(Bebimom)'</strong>을
-              개발 중입니다.
+              개인 학습으로 Next.js 16과 React 19 기반의 <strong>AI 챗봇 프로젝트</strong>를 진행했습니다.
+              Ollama 기반 로컬 LLM을 연동하여 실시간 스트리밍 응답(ReadableStream)을 구현했고,
+              Zustand persist middleware를 활용한 상태 관리와 Markdown 렌더링 기능을 적용했습니다.
+              이를 통해 App Router 구조 설계, 스트리밍 처리, 로컬 AI 연동에 대한 이해를 높였습니다.
+              또한, 앱의 프로세스도 경험하기 위해 <strong>React Native</strong>를 활용하여 AI 챗봇을 활용한
+              어머니들의 육아 서포트 앱을 만들어보기 위해 <strong>‘베비맘(bebimom)’</strong>라는 앱을 진행하고 있습니다.
+            </p>
+            <p>
+              웹과 모바일 환경 모두에서 <strong>사용자 친화적인 인터페이스</strong>를 중요하게 여기며,
+              컴포넌트 기반 아키텍처로 재사용성과 유지보수성을 높이는 코드를 지향합니다.
+              빠르게 변화하는 환경 속에서도 배움을 멈추지 않고, 함께 성장하는 동료로서 팀에 기여하는
+              개발자가 되겠습니다.
             </p>
           </div>
           <div class="about-cards reveal">
@@ -248,202 +252,13 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section section--dark" id="projects" aria-label="Projects — 프로젝트">
+    <!-- CAREER & PROJECTS -->
+    <section class="section" id="career-projects" aria-label="Career and Projects — 경력 및 프로젝트">
       <div class="container">
         <div class="section-label reveal">
           <span class="label-num">02</span>
           <span class="label-slash">/</span>
-          <span class="label-text">Projects</span>
-          <span class="label-line"></span>
-        </div>
-        <div class="proj-featured reveal">
-          <div class="proj-featured-content">
-            <p class="proj-featured-label">Featured Project</p>
-            <h3 class="proj-title">ulruru — 울룰루 여행 플랫폼</h3>
-            <p class="proj-period">2025.12 — 2026.04</p>
-            <div class="proj-desc-box">
-              <p>여행 기록, 커뮤니티, 동행 여행을 결합한 AI 기반 여행 플랫폼 스타트업.</p>
-              <p>서버 상태 관리 전략을 전면 개선하고 모노레포 아키텍처로 프로젝트 구조를 통합했습니다.</p>
-            </div>
-            <ul class="proj-points">
-              <li><span class="arrow">▹</span> TanStack Query 도입 — 서버 상태 관리/캐싱 전략 재설계</li>
-              <li><span class="arrow">▹</span> i18n 다국어 페이지 구성 및 완전 반응형 UI</li>
-              <li><span class="arrow">▹</span> 모노레포 + shared 패키지로 앱·웹 공통 컴포넌트 아키텍처 구축</li>
-              <li><span class="arrow">▹</span> react-virtuoso 가상 스크롤로 대형 리스트 성능 최적화</li>
-              <li><span class="arrow">▹</span> 앱 내 사용자 행동 트래킹 이벤트 분석 로직 구현</li>
-            </ul>
-            <div class="proj-tech-row">
-              <span class="badge">Next.js 14</span>
-              <span class="badge">TypeScript</span>
-              <span class="badge">TanStack Query</span>
-              <span class="badge">Zustand</span>
-              <span class="badge">Tailwind CSS</span>
-            </div>
-            <p class="proj-case-link-wrap">
-              <a class="proj-case-link" href="https://www.notion.so/33edb076677a80b485b1e4cb81afc396" target="_blank"
-                rel="noopener noreferrer">울룰루 앱 개선 및 홈페이지 리뉴얼 — Notion에서 보기 ↗</a>
-            </p>
-          </div>
-          <div class="proj-featured-num" aria-hidden="true">01</div>
-        </div>
-
-        <div class="proj-grid">
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">PCB 병원환급 서비스</h3>
-                <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">환자 서류 제출부터 병원비 환급 처리까지, 멀티 테넌트 구조의 풀스택 헬스케어 플랫폼</p>
-            <ul class="proj-card-points">
-              <li>Next.js 14 App Router 기반 풀스택 아키텍처</li>
-              <li>동적 라우팅 기반 멀티 테넌트 — 회사별 커스터마이징</li>
-              <li>S3 Presigned URL 멀티 파일 업로드 + PDF 미리보기</li>
-              <li>2차 인증(PortOne·SMS), JWT·AES-256 암호화</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Next.js 14</span>
-              <span class="badge badge--sm">Prisma</span>
-              <span class="badge badge--sm">AWS</span>
-              <span class="badge badge--sm">MySQL</span>
-            </div>
-          </article>
-
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">콘텐츠 딜리버리</h3>
-                <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">B2B 임직원·B2C 환자를 대상으로 맞춤형 건강관리 콘텐츠를 제공하는 플랫폼</p>
-            <ul class="proj-card-points">
-              <li>카카오 로그인·싱크, SMS 인증 구현</li>
-              <li>실시간 콘텐츠 검색 서비스 개발</li>
-              <li>카카오 챗봇 테스트 파트 개발</li>
-              <li>공통 UI 컴포넌트 시스템 구축</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Next.js 14</span>
-              <span class="badge badge--sm">TypeScript</span>
-              <span class="badge badge--sm">Prisma</span>
-              <span class="badge badge--sm">AWS</span>
-            </div>
-          </article>
-
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">OTOM — 직무 스트레스 검사</h3>
-                <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">임직원 직무 스트레스 검사 결과 및 통계를 제공하는 멀티모듈 기업 솔루션</p>
-            <ul class="proj-card-points">
-              <li>멀티모듈 프로젝트 구조 파악 및 유지보수</li>
-              <li>JWT 로그인 토큰 발급 로직 개발</li>
-              <li>PDF 보고서 생성 및 미노출 오류 수정</li>
-              <li>refresh token·API 동기 로직 QA 대응</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Java 17</span>
-              <span class="badge badge--sm">Spring Boot</span>
-              <span class="badge badge--sm">React</span>
-              <span class="badge badge--sm">JSP</span>
-            </div>
-          </article>
-
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">ISMS 정책 검증 시스템</h3>
-                <p class="proj-card-period">넥시큐어 · 2022.10 — 2023.12</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">현대캐피탈 자산시스템 연동 및 사내 ISMS 정책 검증 솔루션 개발·고도화</p>
-            <ul class="proj-card-points">
-              <li>현대캐피탈 자산시스템 연동</li>
-              <li>주기별 점검·정책 검색 페이지 개발</li>
-              <li>유지보수 및 시스템 고도화</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Java 1.8</span>
-              <span class="badge badge--sm">Spring</span>
-              <span class="badge badge--sm">jQuery</span>
-              <span class="badge badge--sm">PostgreSQL</span>
-            </div>
-          </article>
-
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">llm-compare-3 (개인 프로젝트)</h3>
-                <p class="proj-card-period">개인 · Next.js 16 · React 19</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">Ollama 기반 로컬 LLM 비교/채팅 실험 프로젝트로, 스트리밍 응답과 마크다운 렌더링에 집중한 앱</p>
-            <ul class="proj-card-points">
-              <li>Next.js 16 App Router + React 19 기반 구조 설계</li>
-              <li>ReadableStream 기반 실시간 토큰 스트리밍 처리</li>
-              <li>Zustand persist로 테마/상태 유지, hydration 대응</li>
-              <li>react-markdown + remark-gfm으로 답변 렌더링</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Next.js 16</span>
-              <span class="badge badge--sm">React 19</span>
-              <span class="badge badge--sm">TypeScript</span>
-              <span class="badge badge--sm">Ollama</span>
-            </div>
-            <p class="proj-case-link-wrap">
-              <a class="proj-case-link" href="https://github.com/suu1006/llm-compare-3" target="_blank"
-                rel="noopener noreferrer">GitHub에서 보기 ↗</a>
-            </p>
-          </article>
-
-          <article class="proj-card reveal">
-            <div class="proj-card-top">
-              <span class="proj-card-icon">⬡</span>
-              <div>
-                <h3 class="proj-card-title">베비맘 (Bebimom) 개인 프로젝트</h3>
-                <p class="proj-card-period">개인 · Web + Mobile + Backend 모노레포</p>
-              </div>
-            </div>
-            <p class="proj-card-desc">육아 AI 커뮤니티 서비스. 웹(Next.js), 모바일(Expo), 백엔드(Express)를 하나의 모노레포로 통합 개발</p>
-            <ul class="proj-card-points">
-              <li>frontend/shared 중심 공용 타입·토큰 구조 설계</li>
-              <li>웹 Next.js 16, 모바일 Expo Router, 백엔드 Express 구성</li>
-              <li>모바일 Zustand + TanStack Query 상태/데이터 구조 적용</li>
-              <li>환경변수/워크스페이스 경계 포함 모노레포 운영 체계 정리</li>
-            </ul>
-            <div class="proj-card-tech">
-              <span class="badge badge--sm">Next.js 16</span>
-              <span class="badge badge--sm">Expo 54</span>
-              <span class="badge badge--sm">Express</span>
-              <span class="badge badge--sm">Prisma</span>
-            </div>
-            <p class="proj-case-link-wrap">
-              <a class="proj-case-link" href="https://github.com/suu1006/bebimom" target="_blank"
-                rel="noopener noreferrer">GitHub에서 보기 ↗</a>
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAREER -->
-    <section class="section" id="career" aria-label="Career — 경력">
-      <div class="container">
-        <div class="section-label reveal">
-          <span class="label-num">03</span>
-          <span class="label-slash">/</span>
-          <span class="label-text">Career</span>
+          <span class="label-text">Career &amp; Projects</span>
           <span class="label-line"></span>
         </div>
         <div class="timeline">
@@ -462,6 +277,38 @@
                 <span class="badge badge--sm">Next.js 14</span>
                 <span class="badge badge--sm">TanStack Query</span>
                 <span class="badge badge--sm">Zustand</span>
+              </div>
+            </div>
+            <div class="timeline-item-projects">
+              <div class="proj-featured reveal">
+                <div class="proj-featured-content">
+                  <p class="proj-featured-label">울룰루 프로젝트</p>
+                  <h3 class="proj-title">ulruru — 울룰루 여행 플랫폼</h3>
+                  <p class="proj-period">2025.12 — 2026.04</p>
+                  <div class="proj-desc-box">
+                    <p>여행 기록, 커뮤니티, 동행 여행을 결합한 AI 기반 여행 플랫폼 스타트업.</p>
+                    <p>서버 상태 관리 전략을 전면 개선하고 모노레포 아키텍처로 프로젝트 구조를 통합했습니다.</p>
+                  </div>
+                  <ul class="proj-points">
+                    <li><span class="arrow">▹</span> TanStack Query 도입 — 서버 상태 관리/캐싱 전략 재설계</li>
+                    <li><span class="arrow">▹</span> i18n 다국어 페이지 구성 및 반응형 UI 구성</li>
+                    <li><span class="arrow">▹</span> 모노레포 + shared 패키지로 앱·웹 공통 컴포넌트 아키텍처 구축</li>
+                    <li><span class="arrow">▹</span> react-virtuoso 가상 스크롤로 대형 리스트 성능 최적화</li>
+                    <li><span class="arrow">▹</span> 앱 내 사용자 행동 트래킹 이벤트 분석 로직 구현</li>
+                  </ul>
+                  <div class="proj-tech-row">
+                    <span class="badge">Next.js 14</span>
+                    <span class="badge">TypeScript</span>
+                    <span class="badge">TanStack Query</span>
+                    <span class="badge">Zustand</span>
+                    <span class="badge">Tailwind CSS</span>
+                  </div>
+                  <p class="proj-case-link-wrap">
+                    <a class="proj-case-link" href="https://www.notion.so/33edb076677a80b485b1e4cb81afc396" target="_blank"
+                      rel="noopener noreferrer">울룰루 앱 개선 및 홈페이지 리뉴얼 — Notion에서 보기 ↗</a>
+                  </p>
+                </div>
+                <div class="proj-featured-num" aria-hidden="true">01</div>
               </div>
             </div>
           </div>
@@ -484,6 +331,79 @@
                 <span class="badge badge--sm">MySQL</span>
               </div>
             </div>
+            <div class="timeline-item-projects">
+              <p class="timeline-proj-group-label">에임메드 프로젝트</p>
+              <div class="proj-grid">
+                <article class="proj-card reveal">
+                  <div class="proj-card-top">
+                    <span class="proj-card-icon">⬡</span>
+                    <div>
+                      <h3 class="proj-card-title">PCB 병원환급 서비스</h3>
+                      <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
+                    </div>
+                  </div>
+                  <p class="proj-card-desc">환자 서류 제출부터 병원비 환급 처리까지, 멀티 테넌트 구조의 풀스택 헬스케어 플랫폼</p>
+                  <ul class="proj-card-points">
+                    <li>Next.js 14 App Router 기반 풀스택 아키텍처</li>
+                    <li>동적 라우팅 기반 멀티 테넌트 — 회사별 커스터마이징</li>
+                    <li>S3 Presigned URL 멀티 파일 업로드 + PDF 미리보기</li>
+                    <li>2차 인증(PortOne·SMS), JWT·AES-256 암호화</li>
+                  </ul>
+                  <div class="proj-card-tech">
+                    <span class="badge badge--sm">Next.js 14</span>
+                    <span class="badge badge--sm">Prisma</span>
+                    <span class="badge badge--sm">AWS</span>
+                    <span class="badge badge--sm">MySQL</span>
+                  </div>
+                </article>
+
+                <article class="proj-card reveal">
+                  <div class="proj-card-top">
+                    <span class="proj-card-icon">⬡</span>
+                    <div>
+                      <h3 class="proj-card-title">콘텐츠 딜리버리</h3>
+                      <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
+                    </div>
+                  </div>
+                  <p class="proj-card-desc">B2B 임직원·B2C 환자를 대상으로 맞춤형 건강관리 콘텐츠를 제공하는 플랫폼</p>
+                  <ul class="proj-card-points">
+                    <li>카카오 로그인·싱크, SMS 인증 구현</li>
+                    <li>실시간 콘텐츠 검색 서비스 개발</li>
+                    <li>카카오 챗봇 테스트 파트 개발</li>
+                    <li>공통 UI 컴포넌트 시스템 구축</li>
+                  </ul>
+                  <div class="proj-card-tech">
+                    <span class="badge badge--sm">Next.js 14</span>
+                    <span class="badge badge--sm">TypeScript</span>
+                    <span class="badge badge--sm">Prisma</span>
+                    <span class="badge badge--sm">AWS</span>
+                  </div>
+                </article>
+
+                <article class="proj-card reveal">
+                  <div class="proj-card-top">
+                    <span class="proj-card-icon">⬡</span>
+                    <div>
+                      <h3 class="proj-card-title">OTOM — 직무 스트레스 검사</h3>
+                      <p class="proj-card-period">에임메드 · 2023.12 — 2025.12</p>
+                    </div>
+                  </div>
+                  <p class="proj-card-desc">임직원 직무 스트레스 검사 결과 및 통계를 제공하는 멀티모듈 기업 솔루션</p>
+                  <ul class="proj-card-points">
+                    <li>멀티모듈 프로젝트 구조 파악 및 유지보수</li>
+                    <li>JWT 로그인 토큰 발급 로직 개발</li>
+                    <li>PDF 보고서 생성 및 미노출 오류 수정</li>
+                    <li>refresh token·API 동기 로직 QA 대응</li>
+                  </ul>
+                  <div class="proj-card-tech">
+                    <span class="badge badge--sm">Java 17</span>
+                    <span class="badge badge--sm">Spring Boot</span>
+                    <span class="badge badge--sm">React</span>
+                    <span class="badge badge--sm">JSP</span>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
           <div class="timeline-item reveal">
             <div class="timeline-left">
@@ -503,6 +423,91 @@
                 <span class="badge badge--sm">PostgreSQL</span>
               </div>
             </div>
+            <div class="timeline-item-projects">
+              <p class="timeline-proj-group-label">넥시큐어 프로젝트</p>
+              <div class="proj-grid">
+                <article class="proj-card reveal">
+                  <div class="proj-card-top">
+                    <span class="proj-card-icon">⬡</span>
+                    <div>
+                      <h3 class="proj-card-title">ISMS 정책 검증 시스템</h3>
+                      <p class="proj-card-period">넥시큐어 · 2022.10 — 2023.12</p>
+                    </div>
+                  </div>
+                  <p class="proj-card-desc">현대캐피탈 자산시스템 연동 및 사내 ISMS 정책 검증 솔루션 개발·고도화</p>
+                  <ul class="proj-card-points">
+                    <li>현대캐피탈 자산시스템 연동</li>
+                    <li>주기별 점검·정책 검색 페이지 개발</li>
+                    <li>유지보수 및 시스템 고도화</li>
+                  </ul>
+                  <div class="proj-card-tech">
+                    <span class="badge badge--sm">Java 1.8</span>
+                    <span class="badge badge--sm">Spring</span>
+                    <span class="badge badge--sm">jQuery</span>
+                    <span class="badge badge--sm">PostgreSQL</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="personal-projects reveal">
+          <p class="personal-projects-label">// 개인 프로젝트</p>
+          <div class="proj-grid">
+            <article class="proj-card reveal">
+              <div class="proj-card-top">
+                <span class="proj-card-icon">⬡</span>
+                <div>
+                  <h3 class="proj-card-title">llm-compare-3 (개인 프로젝트)</h3>
+                  <p class="proj-card-period">개인 · Next.js 16 · React 19</p>
+                </div>
+              </div>
+              <p class="proj-card-desc">Ollama 기반 로컬 LLM 비교/채팅 실험 프로젝트로, 스트리밍 응답과 마크다운 렌더링에 집중한 앱</p>
+              <ul class="proj-card-points">
+                <li>Next.js 16 App Router + React 19 기반 구조 설계</li>
+                <li>ReadableStream 기반 실시간 토큰 스트리밍 처리</li>
+                <li>Zustand persist로 테마/상태 유지, hydration 대응</li>
+                <li>react-markdown + remark-gfm으로 답변 렌더링</li>
+              </ul>
+              <div class="proj-card-tech">
+                <span class="badge badge--sm">Next.js 16</span>
+                <span class="badge badge--sm">React 19</span>
+                <span class="badge badge--sm">TypeScript</span>
+                <span class="badge badge--sm">Ollama</span>
+              </div>
+              <p class="proj-case-link-wrap">
+                <a class="proj-case-link" href="https://github.com/suu1006/llm-compare-3" target="_blank"
+                  rel="noopener noreferrer">GitHub에서 보기 ↗</a>
+              </p>
+            </article>
+
+            <article class="proj-card reveal">
+              <div class="proj-card-top">
+                <span class="proj-card-icon">⬡</span>
+                <div>
+                  <h3 class="proj-card-title">베비맘 (Bebimom) 개인 프로젝트</h3>
+                  <p class="proj-card-period">개인 · Web + Mobile + Backend 모노레포</p>
+                </div>
+              </div>
+              <p class="proj-card-desc">육아 AI 커뮤니티 서비스. 웹(Next.js), 모바일(Expo), 백엔드(Express)를 하나의 모노레포로 통합 개발</p>
+              <ul class="proj-card-points">
+                <li>frontend/shared 중심 공용 타입·토큰 구조 설계</li>
+                <li>웹 Next.js 16, 모바일 Expo Router, 백엔드 Express 구성</li>
+                <li>모바일 Zustand + TanStack Query 상태/데이터 구조 적용</li>
+                <li>환경변수/워크스페이스 경계 포함 모노레포 운영 체계 정리</li>
+              </ul>
+              <div class="proj-card-tech">
+                <span class="badge badge--sm">Next.js 16</span>
+                <span class="badge badge--sm">Expo 54</span>
+                <span class="badge badge--sm">Express</span>
+                <span class="badge badge--sm">Prisma</span>
+              </div>
+              <p class="proj-case-link-wrap">
+                <a class="proj-case-link" href="https://github.com/suu1006/bebimom" target="_blank"
+                  rel="noopener noreferrer">GitHub에서 보기 ↗</a>
+              </p>
+            </article>
           </div>
         </div>
       </div>
@@ -512,7 +517,7 @@
     <section class="section section--dark" id="skills" aria-label="Skills — 기술 스택">
       <div class="container">
         <div class="section-label reveal">
-          <span class="label-num">04</span>
+          <span class="label-num">03</span>
           <span class="label-slash">/</span>
           <span class="label-text">Skills</span>
           <span class="label-line"></span>
@@ -615,7 +620,7 @@
     <section class="section" id="contact" aria-label="Contact — 연락처">
       <div class="container contact-wrap">
         <div class="section-label reveal">
-          <span class="label-num">05</span>
+          <span class="label-num">04</span>
           <span class="label-slash">/</span>
           <span class="label-text">Contact</span>
           <span class="label-line"></span>
@@ -633,14 +638,6 @@
                 <span class="contact-item-value">jeongsuu1006@gmail.com</span>
               </div>
             </a>
-         
-            <div class="contact-item">
-              <span class="contact-item-icon">📍</span>
-              <div>
-                <span class="contact-item-label">Location</span>
-                <span class="contact-item-value">서울시 강남구 역삼동</span>
-              </div>
-            </div>
           </div>
           <a class="btn btn--primary contact-cta" href="mailto:jeongsuu1006@gmail.com">이메일 보내기 →</a>
         </div>
