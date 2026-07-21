@@ -2,10 +2,11 @@
    TYPEWRITER EFFECT
    ============================================================ */
 const PHRASES = [
-  'Frontend Developer',
+  'Software Engineer',
+  'Nuxt/Vue Engineer',
   'Next.js Engineer',
   'UX-Focused Builder',
-  'Component Architect',
+  'AI Workflow Builder',
   'AI App Builder',
 ];
 
